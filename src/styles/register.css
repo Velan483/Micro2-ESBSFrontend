@@ -1,0 +1,35 @@
+.registration-container {
+    padding-top: 64px;
+    position: relative;
+    height: 100%; 
+  }
+  
+  .rotate-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+  }
+  
+  .rotate-enter {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  
+  .rotate-enter-active {
+    transform: rotateY(0deg);
+    opacity: 1;
+    transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+  }
+  
+  .rotate-exit {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  
+  .rotate-exit-active {
+    transform: rotateY(-90deg);
+    opacity: 0;
+    transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+  }
+  
